@@ -1,7 +1,7 @@
 require("dotenv").config();
 const { Sequelize } = require("sequelize");
-const fs = require("fs");
-const path = require("path");
+// const fs = require("fs");
+// const path = require("path");
 const { DB_USER, DB_PASSWORD, DB_HOST, DATABASE_URL } = process.env;
 const DietModel = require("./models/Diet.js");
 const RecipeModel = require("./models/Recipe.js");
