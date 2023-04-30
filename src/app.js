@@ -25,7 +25,7 @@ server.use((req, res, next) => {
 server.use((req, res, next) => {
   res.setHeader(
     "Content-Security-Policy",
-    "default-src 'none'; script-src 'self' https://example.com https://cdn.example.com; style-src 'self' https://example.com https://cdn.example.com; font-src 'self' https://example.com https://cdn.example.com; img-src 'self' https://example.com https://cdn.example.com data:; connect-src 'self' https://example.com https://cdn.example.com; manifest-src 'self' https://example.com;"
+    "default-src 'none'; script-src 'self' https://example.com https://cdn.example.com; style-src 'self' https://example.com https://cdn.example.com; font-src 'self' https://example.com https://cdn.example.com; img-src 'self' https://example.com https://cdn.example.com https://loading.io data:; connect-src 'self' https://example.com https://cdn.example.com https://loading.io; manifest-src 'self' https://example.com;"
   );
   next();
 });
